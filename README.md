@@ -16,4 +16,4 @@ All four of these functions viewed on one page serve as a dashboard and each car
 
 ## issues
 
-- original repository was using ViteJS build and could not deploy successfully with Heroku so I created a new repository using create-react-app
+- original repository was using ViteJS build and could not deploy successfully with Heroku so I created a new repository using create-react-app and transferred the code
