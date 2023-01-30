@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .dragging{
+        opacity: 0.5;
+    }
+
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+    background: #00000000;
+    
+  }
+
+*::-webkit-scrollbar-thumb {
+    background: #00000040;
+    border-radius: 10px;
+  }
