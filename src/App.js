@@ -1,5 +1,5 @@
 function App() {
-  const key = process.env.WEATHER_KEY || "Failed";
+  const key = process.env.WEATHER_KEY;
 
   console.log(process.env.WEATHER_KEY);
 
