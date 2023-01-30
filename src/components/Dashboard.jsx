@@ -2,6 +2,7 @@ import Tasks from "./Tasks";
 import Weather from "./Weather";
 import Quote from "./Quote";
 import DateCard from "./DateCard";
+import Header from "./Header";
 import { useState, useRef } from "react";
 
 const Dashboard = () => {
@@ -30,6 +31,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col w-full lg:h-screen bg-gradient-to-tl from-[#c0392b] via-[#27ae60] to-[#2980b9]">
+      <Header />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full h-full p-10">
         {cards.map(({ component }, index) => (
           <div
