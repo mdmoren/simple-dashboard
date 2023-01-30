@@ -14,3 +14,6 @@ link: https://simple-dashboard.herokuapp.com/
 
 All four of these functions viewed on one page serve as a dashboard and each card can be dragged and rearranged. 
 
+## issues
+
+- original repository was using ViteJS build and could not deploy successfully with Heroku so I created a new repository using create-react-app
