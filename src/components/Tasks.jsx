@@ -19,14 +19,6 @@ const Tasks = () => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
-  const totalTasks = todos.length;
-  let completedTasks = 0;
-  todos.map((todo) => {
-    if (todo.completed) {
-      completedTasks++;
-    }
-  });
-
   function handleSubmit(event) {
     event.preventDefault();
     const newTodo = event.target.elements.todo.value;
