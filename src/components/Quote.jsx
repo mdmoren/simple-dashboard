@@ -4,6 +4,12 @@ const Quote = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
 
+  let clip = `"${quote}" -${author}`;
+  function copyQuote() {
+    navigator.clipboard.writeText(clip);
+    alert("Quote and author have been copied");
+  }
+
   useEffect(() => {
     async function fetchQuote() {
       const res = await fetch("https://api.quotable.io/random");
@@ -28,7 +34,12 @@ const Quote = () => {
       flex relative w-full h-full justify-center items-center
       "
     >
-      <div className="absolute flex flex-col items-center justify-center text-[#eee] w-full h-full px-2 md:px-10">
+      <div
+        onClick={() => {
+          copyQuote();
+        }}
+        className="absolute flex flex-col items-center justify-center text-[#eee] w-full h-full px-2 md:px-10"
+      >
         <p className="text-md md:text-xl font-bold text-center mb-4">
           "{quote}"
         </p>
