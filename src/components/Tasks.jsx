@@ -86,7 +86,7 @@ const Tasks = () => {
                 type="text"
                 placeholder={!isValid ? "Task cannot be empty" : "Enter a task"}
                 className={`bg-transparent focus:outline-none w-full border-b-2 caret-[#eee] 
-              text-white ${
+              text-white rounded-none ${
                 !isValid
                   ? "border-red-500 placeholder-red-500"
                   : "border-[#ccc] hover:border-[#eee] focus:border-[#eee] placeholder-[#ccc] hover:placeholder-[#eee] focus:placeholder-[#aaa]"
@@ -126,7 +126,7 @@ const Tasks = () => {
                   </button>
 
                   <p
-                    className={`flex items-center text-lg justify-start
+                    className={`flex items-center text-sm md:text-lg justify-start
               rounded-lg p-2 ${
                 todo.completed
                   ? "line-through text-[#aaa] bg-transparent"
