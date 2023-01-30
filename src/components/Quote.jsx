@@ -25,12 +25,16 @@ const Quote = () => {
   return (
     <div
       className="
-      flex relative w-full h-full justify-center items-center mx-10 
+      flex relative w-full h-full justify-center items-center
       "
     >
-      <div className="absolute flex flex-col items-stretch text-[#eee]">
-        <p className="text-xl font-bold text-center mb-4">"{quote}"</p>
-        <p className="text-md font-semibold text-center">- {author}</p>
+      <div className="absolute flex flex-col items-center justify-center text-[#eee] w-full h-full px-2 md:px-10">
+        <p className="text-md md:text-xl font-bold text-center mb-4">
+          "{quote}"
+        </p>
+        <p className="text-sm md:text-md font-semibold text-center">
+          - {author}
+        </p>
       </div>
     </div>
   );

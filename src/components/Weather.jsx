@@ -38,8 +38,8 @@ function Weather() {
     >
       <div className="absolute w-full h-full">
         {weather && forecast ? (
-          <div className="flex flex-col md:flex-row h-full justify-evenly items-center p-5">
-            <div className="flex h-full flex-col mt-20 lg:mt-0 lg:justify-center items-center text-[#eee] w-4/5">
+          <div className="flex flex-col md:flex-row h-full justify-center items-center p-5">
+            <div className="flex h-full flex-col justify-center items-center text-[#eee] w-full md:w-4/5">
               <p>
                 <span className="text-2xl">
                   {weather.name}, {weather.sys.country}
@@ -54,9 +54,9 @@ function Weather() {
                 </strong>
               </p>
             </div>
-            <div className="flex h-full w-full items-center justify-center">
+            <div className="flex h-full w-full items-center justify-center text-xs md:text-md">
               <div className="flex m-4 w-full h-full overflow-y-scroll p-5">
-                <div className=" flex w-full flex-col lg:justify-center">
+                <div className=" flex w-full flex-col items-center justify-center">
                   {forecast.slice(0, 12).map((hourlyData, index) => (
                     <div key={index} className="my-2 group">
                       <span className="font-bold text-[#00000080] group-hover:text-[#000]">

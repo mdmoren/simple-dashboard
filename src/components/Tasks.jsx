@@ -65,14 +65,14 @@ const Tasks = () => {
       className="
       flex relative w-full h-full justify-center items-stretch scrollbar-hide"
     >
-      <div className="absolute w-full">
-        <div className="flex-grow-0 h-full flex flex-col items-stretch px-10 mb-10 mt-5">
+      <div className="absolute w-full p-3 md:p-0">
+        <div className="flex-grow-0 h-full flex flex-col items-stretch px-2 md:px-10 md:mt-5 mb-5">
           <div className="flex w-full">
             {todos.length > 1 ? (
               <button
                 onClick={() => handleClear()}
-                className="flex w-1/8 mr-10 justify-between items-center 
-              text-[#ccc] hover:text-[#eee] px-5 py-2 rounded-sm
+                className="flex w-1/8 mr-2 md:mr-10 justify-between items-center 
+              text-[#ccc] hover:text-[#eee] md:px-5 md:py-2 rounded-sm
               hover:ring-2 ring-gray-200 transition-all duration-300"
               >
                 <MdClear size={"1.5rem"} />
@@ -96,8 +96,8 @@ const Tasks = () => {
 
               <button
                 type="submit"
-                className="flex w-1/8 ml-10 justify-between items-center 
-              text-[#ccc] hover:text-[#eee] px-5 py-2 rounded-sm
+                className="flex w-1/8 ml-2 md:ml-10 justify-between items-center 
+              text-[#ccc] hover:text-[#eee] md:px-5 md:py-2 rounded-sm
               hover:ring-2 ring-green-200 transition-all duration-300"
               >
                 <MdAdd size={"1.5rem"} />
@@ -114,8 +114,8 @@ const Tasks = () => {
                 <div className="w-full flex items-center">
                   <button
                     onClick={() => handleCheck(todo.id)}
-                    className={`flex w-1/8 mr-10 justify-between items-center 
-              text-[#ccc] hover:text-[#eee] px-5 py-2 rounded-sm
+                    className={`flex w-1/8 mr-2 md:mr-10 justify-between items-center 
+              text-[#ccc] hover:text-[#eee] md:px-5 md:py-2 rounded-sm
               hover:ring-2 ring-gray-200 transition-all duration-300`}
                   >
                     {todo.completed ? (
@@ -138,8 +138,8 @@ const Tasks = () => {
                 </div>
                 <button
                   onClick={() => handleDelete(todo.id)}
-                  className="flex w-1/8 ml-10 justify-between items-center 
-                  text-[#ccc] hover:text-[#eee] px-5 py-2 rounded-sm
+                  className="flex w-1/8 ml-2 md:ml-10 justify-between items-center 
+                  text-[#ccc] hover:text-[#eee] md:px-5 md:py-2 rounded-sm
                   hover:ring-2 ring-red-200 transition-all duration-300"
                 >
                   <MdDeleteForever size={"1.5rem"} />

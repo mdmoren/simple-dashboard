@@ -20,8 +20,8 @@ const DateCard = () => {
   return (
     <div className="flex relative w-full h-full justify-center items-center">
       <div className="absolute flex w-full h-full flex-col justify-center items-center text-[#eeeeeeaa] hover:text-[#eee]">
-        <div className="font-bold text-7xl">{timeStr}</div>
-        <div className="text-3xl">{dateStr}</div>
+        <div className="font-bold text-3xl md:text-7xl">{timeStr}</div>
+        <div className="text-lg md:text-3xl">{dateStr}</div>
       </div>
     </div>
   );
