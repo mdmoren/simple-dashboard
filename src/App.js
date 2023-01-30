@@ -1,7 +1,9 @@
 function App() {
+  console.log(process.env.REACT_TEST_KEY);
+
   return (
     <div className="flex justify-center items-center font-bold text-5xl w-full h-screen">
-      {process.env.TEST_KEY}
+      {process.env.REACT_TEST_KEY}
     </div>
   );
 }
